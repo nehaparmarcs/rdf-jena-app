@@ -1,0 +1,86 @@
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/"
+      xmlns:admin="http://webns.net/mvcb/">
+
+<foaf:Person rdf:nodeID="BS Parmar">
+	<foaf:name>Banth Raj Parmar</foaf:name>
+	<foaf:fathersName>Kundan Singh Parmar</foaf:fathersName>
+	<foaf:grandparentOf>Guddu</foaf:grandparentOf>
+	<foaf:mothersName>Narayani</foaf:mothersName>
+	<foaf:sibling  />
+	<foaf:gender>male</foaf:gender>
+	<foaf:married>yes</foaf:married>
+	<foaf:spouseName>Umeed</foaf:spouseName>
+</foaf:Person>
+
+<foaf:Person rdf:nodeID="Umeed B">
+	<foaf:name>Umeed</foaf:name>
+	<foaf:fathersName>Kundan Singh Parmar</foaf:fathersName>
+	<foaf:grandparentOf>Guddu</foaf:grandparentOf>
+	<foaf:mothersName>Narayani</foaf:mothersName>
+	<foaf:isGrandParent>yes</foaf:isGrandParent>
+	<foaf:sibling/>
+	<foaf:gender>female</foaf:gender>
+	<foaf:married>yes</foaf:married>
+	<foaf:spouseName>BS Parmar</foaf:spouseName>
+</foaf:Person>
+
+<foaf:Person rdf:nodeID="RS Parmar">
+	<foaf:name>Raj Singh</foaf:name>
+	<foaf:father rdf:nodeID="BS Parmar"/>
+	<foaf:mother rdf:nodeID="Umeed B"/>
+	<foaf:sibling/>
+	<foaf:gender>male</foaf:gender>
+	<foaf:married>yes</foaf:married>
+	<foaf:spouse rdf:nodeID="Suman Parmar"/>
+</foaf:Person>
+
+<foaf:Person rdf:nodeID="Suman Parmar">
+	<foaf:name>Suman Parmar</foaf:name>
+	<foaf:father rdf:nodeID="BS Parmar"/>
+	<foaf:mother rdf:nodeID="Umeed B"/>
+	<foaf:sibling/>
+	<foaf:gender>female</foaf:gender>
+	<foaf:married>yes</foaf:married>
+	<foaf:spouseN rdf:nodeID="RS Parmar"/>
+</foaf:Person>
+
+<foaf:Person rdf:nodeID="Guddu">
+	<foaf:name>Ajay Singh Parmar</foaf:name>
+		<foaf:father rdf:nodeID="RS Parmar" />
+		<foaf:mother rdf:nodeID="Suman Parmar" />
+		<foaf:sibling rdf:nodeID="Daughter" />
+		<foaf:sibling rdf:nodeID="Daughter2" />
+		<foaf:hasSibling>yes</foaf:hasSibling>
+		<foaf:gender>male</foaf:gender>
+		<foaf:married>no</foaf:married>
+		<foaf:spouseName> </foaf:spouseName>
+</foaf:Person>
+
+
+<foaf:Person rdf:nodeID="Daughter">
+	<foaf:name>Neha Parmar</foaf:name>
+	<foaf:father rdf:nodeID="RS Parmar" />
+	<foaf:mother rdf:nodeID="Suman Parmar" />
+	<foaf:sibling rdf:nodeID="Guddu" />
+	<foaf:sibling rdf:nodeID="Daughter2" />
+	<foaf:hasSibling>yes</foaf:hasSibling>
+	<foaf:gender>female</foaf:gender>
+	<foaf:married>no</foaf:married>
+	<foaf:spouseName></foaf:spouseName>
+</foaf:Person>
+
+<foaf:Person rdf:nodeID="Daughter2">
+	<foaf:name>Rajni Tanwar</foaf:name>
+	<foaf:father rdf:nodeID="RS Parmar" />
+	<foaf:mother rdf:nodeID="Suman Parmar" />
+	<foaf:sibling rdf:nodeID="Guddu" />
+	<foaf:hasSibling>yes</foaf:hasSibling>
+	<foaf:gender>female</foaf:gender>
+	<foaf:married>yes</foaf:married>
+	<foaf:spouseName>Anurag Singh Tanwar</foaf:spouseName>
+</foaf:Person>
+
+</rdf:RDF>
